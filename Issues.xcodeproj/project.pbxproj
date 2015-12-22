@@ -221,6 +221,7 @@
 				3BF359181C29CDAA00714457 /* Embed Frameworks */,
 				3BF359231C29CEEE00714457 /* Carthage */,
 				3BF359241C29CF5000714457 /* Bump Build */,
+				3BF359251C29CF9100714457 /* Linting */,
 			);
 			buildRules = (
 			);
@@ -397,7 +398,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = script/set_build_number.sh;
+			shellScript = scripts/set_build_number.sh;
+		};
+		3BF359251C29CF9100714457 /* Linting */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Linting;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = swiftlint;
 		};
 /* End PBXShellScriptBuildPhase section */
 
