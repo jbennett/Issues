@@ -1,15 +1,15 @@
 //
-//  IssuesTests.swift
-//  IssuesTests
+//  IssuesKitTests.swift
+//  IssuesKitTests
 //
 //  Created by Jonathan Bennett on 2015-12-22.
 //  Copyright © 2015 Jonathan Bennett. All rights reserved.
 //
 
 import XCTest
-@testable import Issues
+@testable import IssuesKit
 
-class IssuesTests: XCTestCase {
+class IssuesKitTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

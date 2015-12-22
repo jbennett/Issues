@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>IssuesKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -23,6 +28,16 @@
 			<true/>
 		</dict>
 		<key>3BF358E61C29CD7E00714457</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3BF358FD1C29CDAA00714457</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3BF359061C29CDAA00714457</key>
 		<dict>
 			<key>primary</key>
 			<true/>
