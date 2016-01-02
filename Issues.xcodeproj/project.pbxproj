@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B1AC4471C38636800EBA164 /* ServiceCellConfigurer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1AC4461C38636800EBA164 /* ServiceCellConfigurer.swift */; };
 		3B3B3E0E1C2DFB3900045C78 /* SimpleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3B3E0D1C2DFB3900045C78 /* SimpleDataSource.swift */; };
 		3B3B3E101C2DFF3600045C78 /* TrackingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3B3E0F1C2DFF3600045C78 /* TrackingService.swift */; };
 		3B3B3E131C2DFF8C00045C78 /* SerivceLoginViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3B3E121C2DFF8C00045C78 /* SerivceLoginViewControllerFactory.swift */; };
@@ -85,6 +86,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3B1AC4461C38636800EBA164 /* ServiceCellConfigurer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceCellConfigurer.swift; sourceTree = "<group>"; };
 		3B3B3E0D1C2DFB3900045C78 /* SimpleDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleDataSource.swift; sourceTree = "<group>"; };
 		3B3B3E0F1C2DFF3600045C78 /* TrackingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingService.swift; sourceTree = "<group>"; };
 		3B3B3E121C2DFF8C00045C78 /* SerivceLoginViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerivceLoginViewControllerFactory.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 			children = (
 				3B3E2B961C2D1430008311D3 /* AddAccountViewController.swift */,
 				3B7650281C2DF92300F1EBA7 /* ServiceListViewController.swift */,
+				3B1AC4461C38636800EBA164 /* ServiceCellConfigurer.swift */,
 			);
 			name = "Add Account";
 			sourceTree = "<group>";
@@ -585,6 +588,7 @@
 				3BF359371C2C14B600714457 /* ViewControllerPresentationContext.swift in Sources */,
 				3BF3592A1C29D59200714457 /* AddAccountCoordinator.swift in Sources */,
 				3BF359351C2C14A200714457 /* PresentationContext.swift in Sources */,
+				3B1AC4471C38636800EBA164 /* ServiceCellConfigurer.swift in Sources */,
 				3BF359281C29D54000714457 /* ApplicationCoordinator.swift in Sources */,
 				3BF3593C1C2C1AFD00714457 /* CoordinatorStack.swift in Sources */,
 				3B7650291C2DF92300F1EBA7 /* ServiceListViewController.swift in Sources */,

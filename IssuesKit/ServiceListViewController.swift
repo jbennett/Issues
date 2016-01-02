@@ -10,6 +10,7 @@ import UIKit
 
 public class ServiceListViewController: UITableViewController {
 
+  let cellConfigurer = ServiceCellConfigurer()
   var dataSource: SimpleDataSource<TrackingService>?
 
   public override func viewDidLoad() {
@@ -17,13 +18,8 @@ public class ServiceListViewController: UITableViewController {
 
     let services: [TrackingService] = [.Github, .Sifter]
     let dataSource = SimpleDataSource<TrackingService>(items: services, cellIdentifier: "ServiceCell")
-    dataSource.tableCellConfigurer = { cell, item in
-      if let cell = cell as? ServiceTypeTableViewCell {
-        cell.textLabel?.text = item.title()
-      } else {
-        print("crap")
-      }
-    }
+    dataSource.tableCellConfigurer = cellConfigurer.configureCell
+
     self.dataSource = dataSource
     self.tableView.dataSource = dataSource
   }
