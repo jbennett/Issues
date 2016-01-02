@@ -7,14 +7,24 @@
 //
 
 import UIKit
+import IssuesKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
+  var applicationCoordinator: ApplicationCoordinator?
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     // Override point for customization after application launch.
+
+    let window = UIWindow(frame: UIScreen.mainScreen().bounds)
+    applicationCoordinator = ApplicationCoordinator(window: window)
+
+    applicationCoordinator?.start()
+    window.makeKeyAndVisible()
+    self.window = window
+
     return true
   }
 

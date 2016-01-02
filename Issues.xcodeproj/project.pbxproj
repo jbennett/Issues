@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B3B3E0E1C2DFB3900045C78 /* SimpleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3B3E0D1C2DFB3900045C78 /* SimpleDataSource.swift */; };
+		3B3B3E101C2DFF3600045C78 /* TrackingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3B3E0F1C2DFF3600045C78 /* TrackingService.swift */; };
+		3B3B3E131C2DFF8C00045C78 /* SerivceLoginViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3B3E121C2DFF8C00045C78 /* SerivceLoginViewControllerFactory.swift */; };
+		3B3E2B971C2D1430008311D3 /* AddAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3E2B961C2D1430008311D3 /* AddAccountViewController.swift */; };
+		3B3E2B9B1C2D156D008311D3 /* AddAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B3E2B9A1C2D156D008311D3 /* AddAccount.storyboard */; };
+		3B7650221C2DF38100F1EBA7 /* ServiceAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B7650211C2DF38100F1EBA7 /* ServiceAssets.xcassets */; };
+		3B7650261C2DF6CD00F1EBA7 /* ServiceTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7650251C2DF6CD00F1EBA7 /* ServiceTypeTableViewCell.swift */; };
+		3B7650291C2DF92300F1EBA7 /* ServiceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7650281C2DF92300F1EBA7 /* ServiceListViewController.swift */; };
 		3BF358CC1C29CD7E00714457 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF358CB1C29CD7E00714457 /* AppDelegate.swift */; };
-		3BF358D11C29CD7E00714457 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF358CF1C29CD7E00714457 /* Main.storyboard */; };
 		3BF358D31C29CD7E00714457 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BF358D21C29CD7E00714457 /* Assets.xcassets */; };
 		3BF358D61C29CD7E00714457 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF358D41C29CD7E00714457 /* LaunchScreen.storyboard */; };
 		3BF358EC1C29CD7E00714457 /* IssuesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF358EB1C29CD7E00714457 /* IssuesUITests.swift */; };
@@ -21,6 +28,15 @@
 		3BF359201C29CE8200714457 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF3591E1C29CE8200714457 /* RealmSwift.framework */; };
 		3BF359211C29CEE500714457 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF3591D1C29CE8200714457 /* Realm.framework */; };
 		3BF359221C29CEE500714457 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF3591E1C29CE8200714457 /* RealmSwift.framework */; };
+		3BF359281C29D54000714457 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF359271C29D54000714457 /* ApplicationCoordinator.swift */; };
+		3BF3592A1C29D59200714457 /* AddAccountCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF359291C29D59200714457 /* AddAccountCoordinator.swift */; };
+		3BF3592D1C2BA2B700714457 /* ApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF3592C1C2BA2B700714457 /* ApplicationViewController.swift */; };
+		3BF3592F1C2C11A100714457 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF3592E1C2C11A100714457 /* Coordinator.swift */; };
+		3BF359311C2C144200714457 /* AccountListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF359301C2C144200714457 /* AccountListCoordinator.swift */; };
+		3BF359351C2C14A200714457 /* PresentationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF359341C2C14A200714457 /* PresentationContext.swift */; };
+		3BF359371C2C14B600714457 /* ViewControllerPresentationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF359361C2C14B600714457 /* ViewControllerPresentationContext.swift */; };
+		3BF359391C2C185000714457 /* AccountListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF359381C2C185000714457 /* AccountListViewController.swift */; };
+		3BF3593C1C2C1AFD00714457 /* CoordinatorStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF3593B1C2C1AFD00714457 /* CoordinatorStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,9 +85,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3B3B3E0D1C2DFB3900045C78 /* SimpleDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleDataSource.swift; sourceTree = "<group>"; };
+		3B3B3E0F1C2DFF3600045C78 /* TrackingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingService.swift; sourceTree = "<group>"; };
+		3B3B3E121C2DFF8C00045C78 /* SerivceLoginViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerivceLoginViewControllerFactory.swift; sourceTree = "<group>"; };
+		3B3E2B961C2D1430008311D3 /* AddAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAccountViewController.swift; sourceTree = "<group>"; };
+		3B3E2B9A1C2D156D008311D3 /* AddAccount.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddAccount.storyboard; sourceTree = "<group>"; };
+		3B7650211C2DF38100F1EBA7 /* ServiceAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ServiceAssets.xcassets; sourceTree = "<group>"; };
+		3B7650251C2DF6CD00F1EBA7 /* ServiceTypeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceTypeTableViewCell.swift; sourceTree = "<group>"; };
+		3B7650281C2DF92300F1EBA7 /* ServiceListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceListViewController.swift; sourceTree = "<group>"; };
 		3BF358C81C29CD7E00714457 /* Issues.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Issues.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF358CB1C29CD7E00714457 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3BF358D01C29CD7E00714457 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3BF358D21C29CD7E00714457 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BF358D51C29CD7E00714457 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BF358D71C29CD7E00714457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,6 +109,15 @@
 		3BF359101C29CDAA00714457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BF3591D1C29CE8200714457 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		3BF3591E1C29CE8200714457 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		3BF359271C29D54000714457 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		3BF359291C29D59200714457 /* AddAccountCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAccountCoordinator.swift; sourceTree = "<group>"; };
+		3BF3592C1C2BA2B700714457 /* ApplicationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationViewController.swift; sourceTree = "<group>"; };
+		3BF3592E1C2C11A100714457 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		3BF359301C2C144200714457 /* AccountListCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountListCoordinator.swift; sourceTree = "<group>"; };
+		3BF359341C2C14A200714457 /* PresentationContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationContext.swift; sourceTree = "<group>"; };
+		3BF359361C2C14B600714457 /* ViewControllerPresentationContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerPresentationContext.swift; sourceTree = "<group>"; };
+		3BF359381C2C185000714457 /* AccountListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountListViewController.swift; sourceTree = "<group>"; };
+		3BF3593B1C2C1AFD00714457 /* CoordinatorStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +158,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B3B3E0C1C2DFB2800045C78 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				3B3B3E0D1C2DFB3900045C78 /* SimpleDataSource.swift */,
+			);
+			name = DataSources;
+			sourceTree = "<group>";
+		};
+		3B3B3E111C2DFF7200045C78 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				3B3B3E121C2DFF8C00045C78 /* SerivceLoginViewControllerFactory.swift */,
+			);
+			name = Factories;
+			sourceTree = "<group>";
+		};
+		3B3E2B981C2D1559008311D3 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				3B7650211C2DF38100F1EBA7 /* ServiceAssets.xcassets */,
+				3B3E2B991C2D155C008311D3 /* Xibs */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		3B3E2B991C2D155C008311D3 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				3B3E2B9A1C2D156D008311D3 /* AddAccount.storyboard */,
+			);
+			name = Xibs;
+			sourceTree = "<group>";
+		};
+		3B7650231C2DF6A200F1EBA7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3B7650241C2DF6A600F1EBA7 /* Collection View Cells */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		3B7650241C2DF6A600F1EBA7 /* Collection View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3B7650251C2DF6CD00F1EBA7 /* ServiceTypeTableViewCell.swift */,
+			);
+			name = "Collection View Cells";
+			sourceTree = "<group>";
+		};
+		3B7650271C2DF87400F1EBA7 /* Add Account */ = {
+			isa = PBXGroup;
+			children = (
+				3B3E2B961C2D1430008311D3 /* AddAccountViewController.swift */,
+				3B7650281C2DF92300F1EBA7 /* ServiceListViewController.swift */,
+			);
+			name = "Add Account";
+			sourceTree = "<group>";
+		};
 		3BF358BF1C29CD7E00714457 = {
 			isa = PBXGroup;
 			children = (
@@ -153,7 +243,6 @@
 			isa = PBXGroup;
 			children = (
 				3BF358CB1C29CD7E00714457 /* AppDelegate.swift */,
-				3BF358CF1C29CD7E00714457 /* Main.storyboard */,
 				3BF358D21C29CD7E00714457 /* Assets.xcassets */,
 				3BF358D41C29CD7E00714457 /* LaunchScreen.storyboard */,
 				3BF358D71C29CD7E00714457 /* Info.plist */,
@@ -173,6 +262,12 @@
 		3BF358FF1C29CDAA00714457 /* IssuesKit */ = {
 			isa = PBXGroup;
 			children = (
+				3B3E2B981C2D1559008311D3 /* Assets */,
+				3BF359261C29D4DD00714457 /* Coordinators */,
+				3B3B3E111C2DFF7200045C78 /* Factories */,
+				3BF359321C2C149500714457 /* Models */,
+				3BF3592B1C2BA2A400714457 /* View Controllers */,
+				3B7650231C2DF6A200F1EBA7 /* Views */,
 				3BF359001C29CDAA00714457 /* IssuesKit.h */,
 				3BF359021C29CDAA00714457 /* Info.plist */,
 			);
@@ -195,6 +290,47 @@
 				3BF3591E1C29CE8200714457 /* RealmSwift.framework */,
 			);
 			name = frameworks;
+			sourceTree = "<group>";
+		};
+		3BF359261C29D4DD00714457 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				3BF3592E1C2C11A100714457 /* Coordinator.swift */,
+				3BF359301C2C144200714457 /* AccountListCoordinator.swift */,
+				3BF359291C29D59200714457 /* AddAccountCoordinator.swift */,
+				3BF359271C29D54000714457 /* ApplicationCoordinator.swift */,
+			);
+			name = Coordinators;
+			sourceTree = "<group>";
+		};
+		3BF3592B1C2BA2A400714457 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3B3B3E0C1C2DFB2800045C78 /* DataSources */,
+				3BF3592C1C2BA2B700714457 /* ApplicationViewController.swift */,
+				3BF359381C2C185000714457 /* AccountListViewController.swift */,
+				3B7650271C2DF87400F1EBA7 /* Add Account */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		3BF359321C2C149500714457 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3BF359331C2C149A00714457 /* Presentation Context */,
+				3BF3593B1C2C1AFD00714457 /* CoordinatorStack.swift */,
+				3B3B3E0F1C2DFF3600045C78 /* TrackingService.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		3BF359331C2C149A00714457 /* Presentation Context */ = {
+			isa = PBXGroup;
+			children = (
+				3BF359341C2C14A200714457 /* PresentationContext.swift */,
+				3BF359361C2C14B600714457 /* ViewControllerPresentationContext.swift */,
+			);
+			name = "Presentation Context";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,7 +478,6 @@
 			files = (
 				3BF358D61C29CD7E00714457 /* LaunchScreen.storyboard in Resources */,
 				3BF358D31C29CD7E00714457 /* Assets.xcassets in Resources */,
-				3BF358D11C29CD7E00714457 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +492,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B7650221C2DF38100F1EBA7 /* ServiceAssets.xcassets in Resources */,
+				3B3E2B9B1C2D156D008311D3 /* AddAccount.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +574,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B7650261C2DF6CD00F1EBA7 /* ServiceTypeTableViewCell.swift in Sources */,
+				3BF3592F1C2C11A100714457 /* Coordinator.swift in Sources */,
+				3B3B3E0E1C2DFB3900045C78 /* SimpleDataSource.swift in Sources */,
+				3BF359311C2C144200714457 /* AccountListCoordinator.swift in Sources */,
+				3B3B3E101C2DFF3600045C78 /* TrackingService.swift in Sources */,
+				3B3E2B971C2D1430008311D3 /* AddAccountViewController.swift in Sources */,
+				3BF359391C2C185000714457 /* AccountListViewController.swift in Sources */,
+				3B3B3E131C2DFF8C00045C78 /* SerivceLoginViewControllerFactory.swift in Sources */,
+				3BF359371C2C14B600714457 /* ViewControllerPresentationContext.swift in Sources */,
+				3BF3592A1C29D59200714457 /* AddAccountCoordinator.swift in Sources */,
+				3BF359351C2C14A200714457 /* PresentationContext.swift in Sources */,
+				3BF359281C29D54000714457 /* ApplicationCoordinator.swift in Sources */,
+				3BF3593C1C2C1AFD00714457 /* CoordinatorStack.swift in Sources */,
+				3B7650291C2DF92300F1EBA7 /* ServiceListViewController.swift in Sources */,
+				3BF3592D1C2BA2B700714457 /* ApplicationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,14 +626,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3BF358CF1C29CD7E00714457 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3BF358D01C29CD7E00714457 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3BF358D41C29CD7E00714457 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -580,6 +724,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -595,6 +740,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -633,6 +779,7 @@
 		3BF359161C29CDAA00714457 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -648,6 +795,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jbennett.IssuesKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -656,6 +804,7 @@
 		3BF359171C29CDAA00714457 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -717,6 +866,7 @@
 				3BF358F21C29CD7E00714457 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3BF358F61C29CD7E00714457 /* Build configuration list for PBXNativeTarget "IssuesUITests" */ = {
 			isa = XCConfigurationList;
@@ -725,6 +875,7 @@
 				3BF358F81C29CD7E00714457 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3BF359151C29CDAA00714457 /* Build configuration list for PBXNativeTarget "IssuesKit" */ = {
 			isa = XCConfigurationList;
@@ -733,6 +884,7 @@
 				3BF359171C29CDAA00714457 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3BF359191C29CDAA00714457 /* Build configuration list for PBXNativeTarget "IssuesKitTests" */ = {
 			isa = XCConfigurationList;
@@ -741,6 +893,7 @@
 				3BF3591B1C29CDAA00714457 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
