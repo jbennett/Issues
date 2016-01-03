@@ -35,10 +35,7 @@ public class ApplicationCoordinator {
     if accountListCoordinator.accountCount == 0 {
       let addAccountCoordinator = AddAccountCoordinator()
       coordinators.append(addAccountCoordinator)
-
-      dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 100), dispatch_get_main_queue()) {
-        addAccountCoordinator.start(presentationContext)
-      }
+      addAccountCoordinator.start(presentationContext)
     }
   }
 
