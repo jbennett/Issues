@@ -19,11 +19,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Override point for customization after application launch.
 
     let window = UIWindow(frame: UIScreen.mainScreen().bounds)
-    applicationCoordinator = ApplicationCoordinator(window: window)
-
-    applicationCoordinator?.start()
     window.makeKeyAndVisible()
     self.window = window
+
+    applicationCoordinator = ApplicationCoordinator(window: window)
+    applicationCoordinator?.start()
 
     return true
   }

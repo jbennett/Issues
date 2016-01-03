@@ -18,7 +18,7 @@ public class AddAccountCoordinator: Coordinator {
   }
 
   public func start(presentationContext: PresentationContext) {
-    presentationContext.presentCoordinator(self, containerPreferrance: .Navigation)
+    presentationContext.presentViewController(self.rootViewController(), containerPreferrance: .Navigation)
   }
 
 }

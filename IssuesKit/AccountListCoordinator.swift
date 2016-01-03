@@ -21,7 +21,7 @@ public class AccountListCoordinator: Coordinator {
   }
 
   public func start(presentationContext: PresentationContext) {
-    presentationContext.showCoordinator(self)
+    presentationContext.showViewController(self.rootViewController())
   }
 
 }

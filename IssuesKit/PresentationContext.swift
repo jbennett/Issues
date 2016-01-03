@@ -22,10 +22,10 @@ public enum PreferredPresentationContainer {
 
 public protocol PresentationContext {
 
-  func showCoordinator(coordinator: Coordinator)
-  func showDetailCoordinator(coordinator: Coordinator)
+  func showViewController(viewController: UIViewController)
+  func showDetailViewController(viewController: UIViewController)
 
-  func presentCoordinator(coordinator: Coordinator, containerPreferrance: PreferredPresentationContainer)
-  func dismissCoordinator(coordinator: Coordinator)
+  func presentViewController(viewController: UIViewController, containerPreferrance: PreferredPresentationContainer)
+  func dismissViewController(viewController: UIViewController)
 
 }

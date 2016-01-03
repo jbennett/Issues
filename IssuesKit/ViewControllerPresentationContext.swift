@@ -10,31 +10,31 @@ import UIKit
 
 public class ViewControllerPresentationContext: PresentationContext {
 
-  let viewController: UIViewController
+  let contextViewController: UIViewController
 
   public init(viewController: UIViewController) {
-    self.viewController = viewController
+    contextViewController = viewController
   }
 
-  public func showCoordinator(coordinator: Coordinator) {
-    viewController.showViewController(coordinator.rootViewController(), sender: nil)
+  public func showViewController(viewController: UIViewController) {
+    contextViewController.showViewController(viewController, sender: nil)
   }
 
-  public func showDetailCoordinator(coordinator: Coordinator) {
-    viewController.showDetailViewController(coordinator.rootViewController(), sender: nil)
+  public func showDetailViewController(viewController: UIViewController) {
+    contextViewController.showDetailViewController(viewController, sender: nil)
   }
 
-  public func presentCoordinator(coordinator: Coordinator, containerPreferrance: PreferredPresentationContainer) {
+  public func presentViewController(viewController: UIViewController, containerPreferrance: PreferredPresentationContainer) {
     if let container = containerPreferrance.containerController() {
-      container.showViewController(coordinator.rootViewController(), sender: nil)
-      viewController.presentViewController(container, animated: true, completion: nil)
+      container.showViewController(viewController, sender: nil)
+      contextViewController.presentViewController(container, animated: true, completion: nil)
     } else {
-      viewController.presentViewController(coordinator.rootViewController(), animated: true, completion: nil)
+      contextViewController.presentViewController(viewController, animated: true, completion: nil)
     }
   }
 
-  public func dismissCoordinator(coordinator: Coordinator) {
-    viewController.dismissViewControllerAnimated(true, completion: nil)
+  public func dismissViewController(viewController: UIViewController) {
+    contextViewController.dismissViewControllerAnimated(true, completion: nil)
   }
 
 }
