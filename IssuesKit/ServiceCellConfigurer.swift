@@ -13,6 +13,7 @@ class ServiceCellConfigurer {
   func configureCell(cell: UITableViewCell, service: TrackingService) {
     if let cell = cell as? ServiceTypeTableViewCell {
       cell.textLabel?.text = service.title()
+//      cell.imageView?.image = service.logoImage() // TODO: get square sized logos
     } else {
       print("crap")
     }

@@ -10,6 +10,8 @@ import UIKit
 
 public class ServiceListViewController: UITableViewController {
 
+  public weak var delegate: ServiceListViewControllerDelegate?
+
   let cellConfigurer = ServiceCellConfigurer()
   var dataSource: SimpleDataSource<TrackingService>?
 
@@ -24,6 +26,11 @@ public class ServiceListViewController: UITableViewController {
     self.tableView.dataSource = dataSource
   }
 
+  public override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    guard let service = dataSource?.itemAtIndexPath(indexPath) else { return }
+    delegate?.serviceList(self, didSelectService: service)
+  }
+
   static func fromStoryboard() -> ServiceListViewController {
     let storyboard = UIStoryboard(name: "AddAccount", bundle: NSBundle(forClass: ServiceListViewController.self))
 
@@ -34,5 +41,14 @@ public class ServiceListViewController: UITableViewController {
       return ServiceListViewController()
     }
   }
+
+  // Mark: Interface
+  @IBOutlet var cancelButton: UIBarButtonItem!
+}
+
+public protocol ServiceListViewControllerDelegate: class {
+
+  func serviceListDidCancel(serviceListViewController: ServiceListViewController)
+  func serviceList(serviceListViewController: ServiceListViewController, didSelectService: TrackingService)
 
 }

@@ -28,12 +28,14 @@
                             <outlet property="delegate" destination="AI8-jK-3OJ" id="u2S-2N-xG9"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Pick Account Type" id="1aR-7G-cez">
-                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="B1y-tq-kY8"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Pick Account Type" id="1aR-7G-cez"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="cancelButton" destination="daM-dh-SAd" id="DyD-ge-ogY"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QDD-8D-33G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <barButtonItem systemItem="cancel" id="daM-dh-SAd"/>
             </objects>
             <point key="canvasLocation" x="609" y="530"/>
         </scene>
