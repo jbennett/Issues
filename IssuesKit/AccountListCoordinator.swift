@@ -12,18 +12,12 @@ public class AccountListCoordinator: Coordinator {
 
   public var accountCount: Int = 0
   weak public var delegate: AccountListCoordinatorDelegate?
+  let accountListViewController = AccountListViewController()
 
-  public init() {
-  }
-
-  var accountListViewController = AccountListViewController()
-  public func rootViewController() -> UIViewController {
-    return accountListViewController
-  }
+  public init() {}
 
   public func start(presentationContext: PresentationContext) {
-    presentationContext.showViewController(self.rootViewController())
-    
+    presentationContext.showViewController(accountListViewController)
     delegate?.didUpdateAccountListCoordinator(self)
   }
 

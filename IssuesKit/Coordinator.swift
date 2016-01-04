@@ -10,7 +10,6 @@ import UIKit
 
 public protocol Coordinator {
 
-  func rootViewController() -> UIViewController
   func start(presentationContext: PresentationContext)
 
 }

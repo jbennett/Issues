@@ -10,15 +10,13 @@ import Foundation
 
 public class AddAccountCoordinator: Coordinator {
 
+  let serviceListViewController = ServiceListViewController.fromStoryboard()
+
   public init() {
   }
 
-  public func rootViewController() -> UIViewController {
-    return ServiceListViewController.fromStoryboard()
-  }
-
   public func start(presentationContext: PresentationContext) {
-    presentationContext.presentViewController(self.rootViewController(), containerPreferrance: .Navigation)
+    presentationContext.presentViewController(serviceListViewController, containerPreferrance: .Navigation)
   }
 
 }
