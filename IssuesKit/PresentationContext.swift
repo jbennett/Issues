@@ -10,12 +10,12 @@ import Foundation
 
 public enum PreferredPresentationContainer {
   case Navigation
-  case Unspecified
+  case None
 
   public func containerController() -> UIViewController? {
     switch self {
     case .Navigation: return UINavigationController()
-    case .Unspecified: return nil
+    case .None: return nil
     }
   }
 }
