@@ -26,17 +26,23 @@ public class ApplicationCoordinator {
 
   public func start() {
     window.rootViewController = rootViewController
-    let presentationContext = self.presentationContext
 
     let accountListCoordinator = AccountListCoordinator()
-    coordinators.append(accountListCoordinator)
+    accountListCoordinator.delegate = self
     accountListCoordinator.start(presentationContext)
+    coordinators.append(accountListCoordinator)
+  }
 
-    if accountListCoordinator.accountCount == 0 {
-      let addAccountCoordinator = AddAccountCoordinator()
-      coordinators.append(addAccountCoordinator)
-      addAccountCoordinator.start(presentationContext)
-    }
+}
+
+extension ApplicationCoordinator: AccountListCoordinatorDelegate {
+
+  public func didUpdateAccountListCoordinator(accountListCoordinator: AccountListCoordinator) {
+    guard accountListCoordinator.accountCount == 0 else { return }
+
+    let addAccountCoordinator = AddAccountCoordinator()
+    addAccountCoordinator.start(presentationContext)
+    coordinators.append(addAccountCoordinator)
   }
 
 }
