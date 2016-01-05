@@ -12,8 +12,8 @@ public class ServiceLoginViewControllerFactory {
 
   public func viewControllerForService(service: TrackingService) -> UIViewController {
     switch service {
-    case .Github: return UIViewController()
-    case .Sifter: return UIViewController()
+    case .Github: return GithubLoginViewController.fromStoryboard()
+    case .Sifter: return SifterLoginViewController.fromStoryboard()
     }
   }
 

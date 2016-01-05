@@ -10,13 +10,32 @@ import Foundation
 
 public class AddAccountCoordinator: Coordinator {
 
-  let serviceListViewController = ServiceListViewController.fromStoryboard()
+  let containerViewController: UINavigationController
+
 
   public init() {
+    containerViewController = UINavigationController()
   }
 
   public func start(presentationContext: PresentationContext) {
-    presentationContext.presentViewController(serviceListViewController, containerPreferrance: .Navigation)
+    let serviceListViewController = ServiceListViewController.fromStoryboard()
+    serviceListViewController.delegate = self
+    containerViewController.showViewController(serviceListViewController, sender: nil)
+    presentationContext.presentViewController(containerViewController, containerPreferrance: .None)
+  }
+
+}
+
+extension AddAccountCoordinator: ServiceListViewControllerDelegate {
+
+  public func serviceList(serviceListViewController: ServiceListViewController, didSelectService service: TrackingService) {
+    let loginViewController = ServiceLoginViewControllerFactory().viewControllerForService(service)
+
+    containerViewController.showViewController(loginViewController, sender: nil)
+  }
+
+  public func serviceListDidCancel(serviceListViewController: ServiceListViewController) {
+    print("cancelled")
   }
 
 }

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3B1AC4471C38636800EBA164 /* ServiceCellConfigurer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1AC4461C38636800EBA164 /* ServiceCellConfigurer.swift */; };
+		3B1AC44C1C3AC7C000EBA164 /* ServiceLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1AC44B1C3AC7C000EBA164 /* ServiceLoginViewController.swift */; };
+		3B1AC44E1C3AC88400EBA164 /* SifterLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1AC44D1C3AC88400EBA164 /* SifterLoginViewController.swift */; };
+		3B1AC4501C3AC8AE00EBA164 /* GithubLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1AC44F1C3AC8AE00EBA164 /* GithubLoginViewController.swift */; };
 		3B3B3E0E1C2DFB3900045C78 /* SimpleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3B3E0D1C2DFB3900045C78 /* SimpleDataSource.swift */; };
 		3B3B3E101C2DFF3600045C78 /* TrackingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3B3E0F1C2DFF3600045C78 /* TrackingService.swift */; };
 		3B3B3E131C2DFF8C00045C78 /* SerivceLoginViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3B3E121C2DFF8C00045C78 /* SerivceLoginViewControllerFactory.swift */; };
@@ -87,6 +90,9 @@
 
 /* Begin PBXFileReference section */
 		3B1AC4461C38636800EBA164 /* ServiceCellConfigurer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceCellConfigurer.swift; sourceTree = "<group>"; };
+		3B1AC44B1C3AC7C000EBA164 /* ServiceLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceLoginViewController.swift; sourceTree = "<group>"; };
+		3B1AC44D1C3AC88400EBA164 /* SifterLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SifterLoginViewController.swift; sourceTree = "<group>"; };
+		3B1AC44F1C3AC8AE00EBA164 /* GithubLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubLoginViewController.swift; sourceTree = "<group>"; };
 		3B3B3E0D1C2DFB3900045C78 /* SimpleDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleDataSource.swift; sourceTree = "<group>"; };
 		3B3B3E0F1C2DFF3600045C78 /* TrackingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingService.swift; sourceTree = "<group>"; };
 		3B3B3E121C2DFF8C00045C78 /* SerivceLoginViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerivceLoginViewControllerFactory.swift; sourceTree = "<group>"; };
@@ -160,6 +166,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B1AC44A1C3AC7AE00EBA164 /* Login View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3B1AC44B1C3AC7C000EBA164 /* ServiceLoginViewController.swift */,
+				3B1AC44D1C3AC88400EBA164 /* SifterLoginViewController.swift */,
+				3B1AC44F1C3AC8AE00EBA164 /* GithubLoginViewController.swift */,
+			);
+			name = "Login View Controller";
+			sourceTree = "<group>";
+		};
 		3B3B3E0C1C2DFB2800045C78 /* DataSources */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,6 +228,7 @@
 		3B7650271C2DF87400F1EBA7 /* Add Account */ = {
 			isa = PBXGroup;
 			children = (
+				3B1AC44A1C3AC7AE00EBA164 /* Login View Controller */,
 				3B3E2B961C2D1430008311D3 /* AddAccountViewController.swift */,
 				3B7650281C2DF92300F1EBA7 /* ServiceListViewController.swift */,
 				3B1AC4461C38636800EBA164 /* ServiceCellConfigurer.swift */,
@@ -582,6 +599,7 @@
 				3B3B3E0E1C2DFB3900045C78 /* SimpleDataSource.swift in Sources */,
 				3BF359311C2C144200714457 /* AccountListCoordinator.swift in Sources */,
 				3B3B3E101C2DFF3600045C78 /* TrackingService.swift in Sources */,
+				3B1AC44E1C3AC88400EBA164 /* SifterLoginViewController.swift in Sources */,
 				3B3E2B971C2D1430008311D3 /* AddAccountViewController.swift in Sources */,
 				3BF359391C2C185000714457 /* AccountListViewController.swift in Sources */,
 				3B3B3E131C2DFF8C00045C78 /* SerivceLoginViewControllerFactory.swift in Sources */,
@@ -589,7 +607,9 @@
 				3BF3592A1C29D59200714457 /* AddAccountCoordinator.swift in Sources */,
 				3BF359351C2C14A200714457 /* PresentationContext.swift in Sources */,
 				3B1AC4471C38636800EBA164 /* ServiceCellConfigurer.swift in Sources */,
+				3B1AC4501C3AC8AE00EBA164 /* GithubLoginViewController.swift in Sources */,
 				3BF359281C29D54000714457 /* ApplicationCoordinator.swift in Sources */,
+				3B1AC44C1C3AC7C000EBA164 /* ServiceLoginViewController.swift in Sources */,
 				3BF3593C1C2C1AFD00714457 /* CoordinatorStack.swift in Sources */,
 				3B7650291C2DF92300F1EBA7 /* ServiceListViewController.swift in Sources */,
 				3BF3592D1C2BA2B700714457 /* ApplicationViewController.swift in Sources */,
